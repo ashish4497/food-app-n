@@ -26,6 +26,7 @@ app.use(morgan("dev"));
 app.use("/api/v1/test", require("./routes/testRoutes"));
 app.use("/api/v1/auth", require("./routes/authRouter"));
 app.use("/api/v1/user", require("./routes/userRoutes"));
+app.use("/api/v1/restruant", require("./routes/resturantRouter"));
 
 app.get("/", (req, res) => {
   return res.status(200).send("welcome To App Food");
